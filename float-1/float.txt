@@ -1,0 +1,38 @@
+자식요소가 flaot되면 집나간 자식으로 여기므로,
+빈 공간으로 인식해서 부모 width도 줄어들게 된다.
+
+float 시킨 요소는 box type이 block으로 바뀐다.
+but, 
+영역을 만들지 못하는 부족한 block(block 속성에 의한 부모 with, heigh 변화가 없다)이고, inline type의 요소,text,이미지는 float가 되있는 걸 인지하고 그 부분을 피해서 구성된다.
+
+부모 요소에 overflow:hidden을 하면 float된 자식의 공간을 확보 가능한다.
+
+clearfix
+
+float에 의한 망가진 구조를 고치기 위해 만들어진 
+
+clear:left    float left 된 요소를 찾아서 그 아래에 위치하게 만들어준다.
+clear:right
+clear:both
+
+Pseudo-Element로 해결한다. html에는 존재하지 않는 가상요소 + clear
+::before  flaot된 영역  ::after
+
+
+ex] 가상요소
+.ㅇㅇㅇㅇㅇ ::before{
+  content:
+  margin-right:
+  font-size
+}
+
+.ㅇㅇㅇㅇㅇ ::after{
+  content:
+  font-style:
+}
+
+.parent::after{
+  content:"";
+  display: block;
+  clear: left;
+}
