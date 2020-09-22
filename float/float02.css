@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: #e5e5e5;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+/* ▼ WHERE YOUR CODE BEGINS */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.TabNav {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 540px;
+  height: 54px;
+}
+.Tab {
+  position: absolute;
+  border-bottom: 1px solid #e5eaef;
+}
+
+.Tab::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.TabItem {
+  float: left;
+  margin-right: 16px;
+}
+
+.TabItem a {
+  display: block;
+  padding: 16px 20px;
+  /* 사용자의 편의에 의해 모든 영역 선택시 반응이 올수 있게 <a> tag에 padding을 주는 것을 추천한다.*/
+}
+
+.TabItem.selected {
+  border-bottom: 2px solid #2860e1;
+}
+.TabItem.selected a {
+  color: #2860e1;
+  font-weight: 500;
+  /*  border-bottom: 2px solid #2860e1 */
+}
