@@ -31,19 +31,16 @@ p {
 
 /* ▼ WHERE YOUR CODE BEGINS */
 
-.card {
-  background-color: #ffffff;
-  position: relative;
-  padding-top: 20px;
-  padding-left: 20px;
-  width: 531px;
-  height: 120px;
-}
-
-.card::after {
+.clearfix::after {
   content: "";
   display: block;
-  clear: left;
+  clear: both;
+}
+
+.card {
+  max-width: 540px;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 .card-user {
@@ -51,12 +48,11 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 .card-content {
   float: left;
-  position: absolute;
-  left: 84px;
 }
 
 .card-content strong {
