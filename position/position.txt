@@ -1,0 +1,33 @@
+Position: static relative absolute fixed 
+
+X-sticky(지원하는 브라우저가 많지 않다.skip)
+
+원하는 곳으로 이동시킬 수 있는 속성
+Type -> 기준점
+
+[static]
+모든 요소의 position 기본값
+
+
+[relative]
+부모를 떠나지만 자신의 원래 위치를 기준으로 top, left 움직인다.
+
+[absolute]
+flaot와 비슷한 특성을 갖게 된다.
+display block으로 바뀌지만(padding,margin,width,height 가능),
+블록 영역을 갖지못하는 부족한 block.
+그러나, inline 요소 마저 인식하지 못한다.
+
+postion이 static이 아닌 요소는 모두 기준으로 선택가능하다.
+- 조상요소에 position: relative로 기준점을 정한다.
+
+[fixed]
+absolute와 동일한 현상이 나타나지만,
+자신의 기준점이 viewport 사이즈(브라우저 창의 전체 크기)다.
+
+position을 선언한 다면 그 이후엔 어디로 옮길지 위치를 선언한다.
+top,bottom / left,right 둘 중 하나씩을 통일되게 사용하는 것을 추천 
+
+[z-index] 
+Position된 요소들의 수직적 위치를 선언한다.
+z-index: ; 값이 크면 클수록 위에 위치한다.
