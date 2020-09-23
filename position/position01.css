@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #273444;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.user-card {
+  background-color: #ffffff;
+  max-width: 240px;
+  border-radius: 4px;
+}
+.user-photo,
+.user-name {
+  float: left;
+}
+.user-photo {
+  position: relative;
+  margin: 8px 12px;
+}
+.user-photo img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.user-photo span {
+  position: absolute;
+  box-sizing: content-box;
+  left: 30px;
+  top: 30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #21d891;
+}
+
+.user-name {
+  margin: 16px 0;
+}
