@@ -37,17 +37,20 @@ h1 {
   margin: 8px 12px;
 }
 .user-photo img {
+  display: block;
+  /* img 특성상 width, height 줄수 있지만, inline 속성이므로
+  img의 width와 height를 바꿔줄때 block으로 바꾸주세요~*/
   border-radius: 50%;
   height: 40px;
   width: 40px;
 }
-.user-photo span {
+.user-status {
   position: absolute;
-  box-sizing: content-box;
   left: 30px;
   top: 30px;
   width: 8px;
   height: 8px;
+  box-sizing: content-box;
   border-radius: 50%;
   border: 2px solid #ffffff;
   background-color: #21d891;
