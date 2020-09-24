@@ -1,0 +1,60 @@
+flexbox를 이용한 정렬
+How to use it?!
+
+[4Steps]
+
+1. 정렬하고 싶은 요소를 감싸고 있는데 부모요소애 flex 선언.
+
+flexbox{
+  dispaly: flex;
+  /* flex , inline-flexbox */
+}
+
+
+2. 정렬을 할때 세로? 가로? 어느 방향으로 정렬을 할지 정해야한다.
+
+flexbox{
+  flex-direction: row;
+  /* row, row-reverse, column, column-reverse */
+}
+
+
+flex-direction을  선언하면?
+보이지 않는  axis가 생기는데,
+flex direction 값에 따라 axis가 달라진다.
+
+row 왼 -> 오 main axis
+위 -> 아 cross axis
+
+main axis의 수직으로 흐르는 게 cross axis
+row-reverse 오 -> 왼 main axis
+
+3. 요소를 한줄에 다 정렬할지 결정
+
+부모의 width가 자식요소를 일렬로 나열하기엔 부족하지만 한줄로 정렬하고 싶을때,
+- flex-wrap: nowrap (자식요소의 width를 줄여서 정렬한다.)
+
+한줄에 모두 정렬하기에 공간이 넉넉치 않을 때 두줄을 만들어서 정렬하고 싶을땐,
+- flex-wrap: wrap
+
+4. 플렉스 박스 만들기
+
+
+
+[main axis를 기준으로 정렬을 하고 싶을때]
+justify-content : 
+- center
+- flex-start(row일 경우 왼쪽정렬)
+- flex-end(row일 경우 오른쪽 정렬)
+- space-between(요소 사이 간격을 같게 만들어주는)
+- space-around (모든 요소 좌우의 간격을 같게 만들어주는) 등등
+
+[cross axis를 기준으로 정렬을 하고 싶을때]
+조건> flex-direction: row, flex-wrap: wrap // 여러 줄이 생김
+- align-items(각각의 flex line의 cross aixs를 기준으로 정렬), 
+- align-content (전체를 하나의 flex line으로 간주하고, cross axis를 기준으로 정렬 space-between, space-around 도 사용가능.)
+
+
+[order]
+각각의 요소에 order:1,2,3...값을 주면 mark up된 것과 상관없이 순서를 바꿀 수 있다.
+
