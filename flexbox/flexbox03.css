@@ -6,6 +6,7 @@
 body {
   font-family: "Muli", sans-serif;
   color: #273444;
+  background-color: #e5e5e5;
 }
 
 .profile-name {
@@ -35,3 +36,33 @@ body {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+
+.profile {
+  text-align: center;
+  max-width: 386px;
+  padding: 32px 40px;
+  border-radius: 16px;
+  background-color: #ffff;
+}
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  margin-bottom: 16px;
+}
+.profile-name {
+  margin-bottom: 4px;
+}
+.profile-location {
+  margin-bottom: 32px;
+}
+.profile-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.profile-detail-item dt {
+  margin-bottom: 4px;
+}
