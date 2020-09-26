@@ -50,8 +50,6 @@ a {
   background: rgba(255, 200, 44, 1);
 }
 .banner-title {
-  font-family: Noto Sans CJK KR;
-  font-style: normal;
   font-size: 18px;
   font-weight: 700;
   display: flex;
@@ -77,10 +75,9 @@ a {
 }
 
 .landing-title {
-  margin-bottom: 32px;
-  font-style: normal;
+  margin-bottom: 24px;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 32px;
   text-align: right;
 }
 
@@ -121,6 +118,5 @@ a {
     width: 180px;
     height: 56px;
     font-size: 18px;
-    font-weight: 700;
   }
 }
