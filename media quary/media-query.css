@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* viewprot height 1vh*/
+  background-color: #ff4949;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.box::after {
+  content: "Mobile";
+}
+
+@media screen and (min-width: 567px) {
+  /* CSS 선언 */
+  .box {
+    background-color: #ff5216;
+  }
+
+  .box:after {
+    content: "landsacpe phone";
+  }
+}
+
+/* 
+  @media screen and (min-width: 567px) and (max-width: 767px) 
+  위 구문처럼 max-width도 가능 
+*/
+
+@media screen and (min-width: 768px) {
+  .box {
+    background-color: #ffc82c;
+  }
+  .box:after {
+    content: "Tablet";
+  }
+}
