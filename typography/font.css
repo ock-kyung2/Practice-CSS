@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Ocks";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/font/NanumSquareL.eot"); /* IE9 Compat Modes */
+  src: url("./assets/font/NanumSquareL.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/font/NanumSquareL.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/font/NanumSquareL.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("./assets/font/NanumSquareL.ttf")
+      format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Ocks";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/font/NanumSquareR.eot"); /* IE9 Compat Modes */
+  src: url("./assets/font/NanumSquareR.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/font/NanumSquareR.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/font/NanumSquareR.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("./assets/font/NanumSquareR.ttf")
+      format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Ocks";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/font/NanumSquareB.eot"); /* IE9 Compat Modes */
+  src: url("./assets/font/NanumSquareB.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/font/NanumSquareB.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/font/NanumSquareB.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("./assets/font/NanumSquareB.ttf")
+      format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Ocks";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/font/NanumSquareLB.eot"); /* IE9 Compat Modes */
+  src: url("./assets/font/NanumSquareLB.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/font/NanumSquareLB.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/font/NanumSquareLB.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("./assets/font/NanumSquareLB.ttf")
+      format("truetype");
+  /* Safari, Android, iOS */
+}
