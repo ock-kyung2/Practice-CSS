@@ -1,0 +1,36 @@
+* text-align : 글자 정렬
+- left /right /center
+
+.text {
+  text-align : left;
+}
+
+* text-indent : 들여쓰기, 내여쓰기
+
+.text {
+  text-indent : 100px; -100px;
+}
+
+* text-transform : text 변형
+- none /capitalize / uppercase / lowercase
+
+.text {
+  text-transform : capitalize; (첫 글자 대문자)
+  text-transform : uppercase; (모든 글자 대문자)
+  text-transform : lowercase; (모든 글자 소문자)
+}
+
+* text-decoration : text 꾸미기
+
+.text {
+  text-decoration: underline (밑줄 긋기)
+  text-decoration: line-through (text 중간을 가로지르는 줄 긋기)
+  text-decoration: overline (text 윗줄) 
+}
+
+<a> 기본 text-decoration 설정이 underline이므로 none으로 없앨때 많이 사용.
+
+* font-style : 문자 기울기
+- normal italic ablique
+ 
+ <em> 기본 설정이 italic 이므로 normal로 없앨때 많이 사용.
