@@ -1,0 +1,52 @@
+[typography]
+- text를 예쁘게 디자인 하는 것
+
+* font-size : 글씨 크기
+.text {
+  font-size: px(절대 크기) / em, rem(상대 크기)
+}
+
+em: equal to capital M (실제로 적용된 폰트사이즈를 1em로 한다.)
+rem: root em (<html>에 적용된 font size을 1rem으로 한다.)
+
+* line-height : 줄 간격
+
+.text {
+  line-height: em을 주로 쓴다(px,em,rem 사용)
+  ex] line-height: 1.5 (em 단위 생략 but, px/rem은 단위 필수!)
+}
+
+line-height 값이 얼마든간에 글자는 줄 간격의 가장 가운데 배치
+
+* letter-spacing : 자간
+
+.text{ 
+  letter-spacing: em을 주로 쓴다(px/em 사용)
+  ex] letter-spacing: -0.01em (단위 필수!) ////// 적용된 font-size의 몇% +,-
+}
+
+*font-family : 폰트 서체
+
+.text{ 
+  font-family: "Poppins"; // "Poppins" 폰트 서체를 적용
+  font-family: "Poppins", sans-serfi;// "Poppins" 폰트 없다면?아무 sans-serfi
+  font-family: "Poppins", "Roboto", sans-serfi;
+}
+
+<-- serif 삐침이 있는 글꼴
+sans-serfi 삐침이 없고 굵기가 일정한 글꼴 -->
+
+* font-weight : 글자 굵기
+
+.text{ 
+  font-weight: 400;
+}
+
+// light --- 400(regular) --- 700(bold) --- bold //
+
+* color : 색상
+- hex, rgb, rgba 표현
+
+.text{ 
+  color: #-----, rgb(#,#,#), rgba(#,#,#,opacity)
+}
