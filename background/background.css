@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+
+  /* background-color/// hex rgb rgba(); */
+  background-color: #558866;
+
+  /* url()
+  ex] background-image: url(./assets/boram.jpg); */
+  background-image: url(https://t1.daumcdn.net/liveboard/holapet/0e5f90af436e4c218343073164a5f657.JPG);
+
+  /* background-repeat */
+  background-repeat: no-repeat;
+
+  /* background-size 
+  -contain(이미지를 요소에 fit in)
+  -cover(요소안에 꽉차도록 이미지 size 조절)
+  -custom (background-size: 50% auto)
+   */
+  background-size: contain;
+
+  /* background-position : x, y축 위치 지정 */
+  background-position: center center;
+}
