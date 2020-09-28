@@ -45,12 +45,10 @@ body {
 .card-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-.property-type {
-  display: flex;
-  margin-bottom: 9px;
-}
 .property-type span {
   color: #7d858f;
   /* Font */
