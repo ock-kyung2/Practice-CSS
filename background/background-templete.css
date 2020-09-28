@@ -29,8 +29,6 @@ body {
   width: 840px;
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   padding: 24px;
 }
 
@@ -49,6 +47,13 @@ body {
   position: absolute;
 }
 
+.card-content {
+  flex-grow: 1;
+  /* 
+  0 은 절대 채우지 마
+  1,2...정수값: 남는 영역이 있으면 차지하게 명령! 
+  */
+}
 .card-header {
   display: flex;
   justify-content: space-between;
