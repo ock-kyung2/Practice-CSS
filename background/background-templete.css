@@ -26,12 +26,14 @@ body {
   align-items: flex-start;
   padding: 24px;
 }
+
 .card-image {
   width: 300px;
   height: 200px;
   margin-right: 24px;
   border-radius: 6px;
   background-image: url(./assets/img-house.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -58,8 +60,7 @@ body {
 }
 
 .plus-badge {
-  width: 48px;
-  height: 22px;
+  display: inline-block;
   border-radius: 4px;
   padding: 1px 8px;
   margin-right: 8px;
@@ -82,12 +83,25 @@ body {
 
 .property-rate strong {
   color: #151b26;
+  font-weight: 400;
 }
 
 .property-rate span {
   color: #7d858f;
 }
 
+.property-rate::before {
+  content: "";
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(./assets/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
 .card-title {
   margin-bottom: 16px;
   /* Font */
@@ -109,4 +123,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+dd span::after {
+  content: " ·";
 }
