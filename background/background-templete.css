@@ -15,7 +15,14 @@ body {
 }
 
 .sr-only {
-  display: none;
+  /* display: none;
+  screen reader도 없는 취급을 한다. */
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
 }
 
 .card {
@@ -110,19 +117,30 @@ body {
 }
 
 .card-detail {
+}
+
+.property-detail {
   color: #7d858f;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.142857142857143;
-}
 
-.property-detail {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-dd span::after {
-  content: " ·";
+.property-detail dd span::after {
+  content: "·";
+  margin: 0 8px;
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
 }
