@@ -1,16 +1,1 @@
 /* ▼ WHERE YOUR CODE BEGINS */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.body {
-  background-color: ##e5e5e5;
-}
-
-.line-button {
-  width: 49px;
-  height: 20px;
-  background-color: #ffffff;
-}
