@@ -1,0 +1,43 @@
+* animation-property
+  - name
+
+  @keyframes : 어떤 animation을 줄지 정의를 해야한다.
+
+  @keyframes move-box{
+    frome{
+      <!-- Rules -->
+    }
+
+    to{
+      <!-- Rules -->
+    }
+  }
+
+  더 정교하게 효과를 주고 싶을때,
+  @keyframes name{
+    0%{
+      <!-- Rules -->
+    }
+
+    50%{ animation이 50% 진행됐을 때 css 효과
+      <!-- Rules -->
+    }
+
+    100%{
+      <!-- Rules -->
+    }
+  }
+
+
+  .box{
+    animation-name: move-box;
+    animation-duration:2000ms;
+    animation-iteration-count:3;
+    animation-direction: alternate; 번갈아 가면서 방향을 바꿈
+  }
+
+  timing-function 변화속도
+  delay [ms][s]
+
+ - iteration-count: 되풀이를 얼마나 할건가? [정수][infinite]
+ - animation-direction: animation 뱡향
