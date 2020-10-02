@@ -1,0 +1,31 @@
+* property
+- css 속성
+
+*duration
+- transition 지속시간  [ms],[s]
+
+
+.box{
+  transition: font-size 2.5s;
+  모든 항목 변화를 원할땐, all 2s ease-in 1000ms;
+}
+
+.box{
+  transition: font-size 1000ms ease-out, bacground-color 2000ms cubic-bezier(.07,.86,1,.1) 1000ms;
+  각각의 property에 transition을 적용하고 싶을때 ;
+}
+
+.box.active{
+  font-size: 30px;
+  bacground-color:#ff4949
+}
+
+*timing-function
+- 변화 속도
+ease-in/ease-out/ease-in-out/cubic-bezier():가속도를 제어하고 싶을때 사용
+
+//cubic-bezier() - 가속도를 제어하고 싶을때 사용//
+link: https://cubic-bezier.com/#.17,.67,.83,.67
+
+*delay
+-transition 지연시간
