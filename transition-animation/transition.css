@@ -1,0 +1,42 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #e5e5e5;
+}
+/* form 요소는 body에 font 적용해도 함께 적용이 안된다. */
+button,
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.line-button {
+  color: #151b26;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 18px 32px;
+}
+
+.rectangle {
+  background-color: #0066ff;
+  width: 24px;
+  height: 2px;
+}
+.line-button:hover .rectangle {
+  display: block;
+}
+
+.line-button.active {
+  border-bottom: 2px solid #0066ff;
+}
