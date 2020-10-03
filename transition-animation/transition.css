@@ -26,17 +26,21 @@ button {
   font-size: 16px;
   line-height: 1.25;
   padding: 18px 32px;
+
+  position: relative;
 }
 
-.rectangle {
+.line-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: #0066ff;
-  width: 24px;
+  width: 0;
   height: 2px;
+  transition: width 250ms ease-in, background-color 250ms ease-in;
 }
-.line-button:hover .rectangle {
-  display: block;
-}
-
-.line-button.active {
-  border-bottom: 2px solid #0066ff;
+.line-button:hover::after {
+  width: 100%;
+  background-color: hotpink;
 }
