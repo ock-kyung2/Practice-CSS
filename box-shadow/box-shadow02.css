@@ -28,7 +28,10 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
+  transition: box-shadow 250ms ease-in;
+}
 
+.btn-cancel:hover {
   box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
 }
 
