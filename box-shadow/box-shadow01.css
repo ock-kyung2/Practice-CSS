@@ -1,0 +1,21 @@
+body {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 100vh;
+}
+.rectangle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 100px;
+  background-color: #e9ebf1;
+  box-shadow: -24px -24px 55px 0px rgba(255, 255, 255, 0.4);
+}
+
+/* 
+[box-shadow 작성 순서 중요!!]
+- box-shadow: x y 흐린정도 그림자 사이즈 색상
+*/
