@@ -1,0 +1,52 @@
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+}
+
+.button {
+  width: 705px;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.btn-cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 161.15px;
+  height: 56px;
+  background-color: #ff4949;
+  margin-right: 16px;
+  border: none;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
+
+.btn-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 161.15px;
+  height: 56px;
+  background-color: #13ce66;
+  border: none;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}
