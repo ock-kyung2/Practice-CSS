@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+}
+
+p {
+  width: 500px;
+  height: 400px;
+  background-color: #0066ff;
+  overflow: hidden;
+  /* overflow: auto;
+  overflow: scroll; */
+}
+
+blockquote {
+  background-color: #ffc82c;
+}
+
+/* 
+자식요소가 부모요소의 크기를 벗어났을때 어떻게 처리할지 결정하는 속성.
+visible: 기본값 (삐져나오든 말든 그냥 냅둬^^)
+auto,scroll: 넘쳐흘렀을때 알아서 해라, scroll로 표시해라.
+hidden: 넘쳐흐르면 숨겨라.
+*/
