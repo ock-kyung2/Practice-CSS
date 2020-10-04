@@ -7,18 +7,27 @@ body {
   font-family: "Poppins" sans-serif;
 }
 
+.box {
+  width: 200px;
+  height: 300px;
+  background-color: #ff4949;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
 p {
   width: 500px;
   height: 400px;
   background-color: #0066ff;
-  overflow: hidden;
+
+  /* overflow: hidden;
   /* overflow: auto;
   overflow: scroll; */
 }
 
-blockquote {
+/* blockquote {
   background-color: #ffc82c;
-}
+} */
 
 /* 
 자식요소가 부모요소의 크기를 벗어났을때 어떻게 처리할지 결정하는 속성.
