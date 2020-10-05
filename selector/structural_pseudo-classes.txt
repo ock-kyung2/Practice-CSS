@@ -1,0 +1,29 @@
+[Structural Pseudo-classes : 가상선택자]
+
+Pseudo : 가상,가짜
+
+element:first-child
+element:last-child
+element:nth-child
+
+<ol>
+  <li></li> ---color: blue
+  <li></li>
+  <li></li> ---colo: red
+  <li></li>
+  <li></li>  
+  <li></li> ---color: yellow
+</ol>
+
+  li:first-child{
+    color: blue;
+  }
+
+  li:last-child{
+    color: yellow;
+  }
+
+  li:nth-child(3){
+    color: red;
+  }
+  - li:nth-child(2n(짝수)/2n-1(홀수)){
