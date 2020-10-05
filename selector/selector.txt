@@ -1,0 +1,31 @@
+type selector(html 선택자)
+
+  h1{
+    color:#0066ff
+  }
+
+  strong{
+
+  }
+
+class selector (요소 안에 class="###"선언하면, ###가 요소가 된다.)
+
+  .box{
+    width:500px;
+    height:500px;
+    color:#ff4949;
+  }
+
+ ** 요소에 class="box"라 한번의 선언으로 여러 요소를 디자인 가능하다
+
+ <div class="box-0 box-1 box-2>
+
+ .box-0   .box-0.box-1
+ .box-1   .box-0.box-2
+ .box-2   .box-1.box-2
+          .box-0.box-1.box-2  
+          // class selector를 공간 없이 붙여쓰면 모두를 포함한 요소를 택(= 합집합)
+
+ID selector ( 마치 주민등록번호 같은 단 하나 존재하는)
+
+  <div id="ock_kyung2"> ----> CSS 상에선 #ock_kyung2라 표시.
