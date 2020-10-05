@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #0066ff;
+  /* transform: scale(2); */
+  /* transform: rotate(45deg); */
+  transform: translate(100%, 100%);
+  /* 
+  transform: translateX(40px);
+  transform: translateY(50px);
+  */
+}
+
+p {
+  background-color: #5e5e34;
+}
+
+/* 
+translate(x,y) 
+어떤 요소를 내가 원하는 위치로 옮길때 사용. 
+원래 위치를 기억하고, 다른 요소에 영향을 절대 주지 않는다.
+
+- translate(100%,100%)자신의 넓이/높이에 비례하여 이동.
+*/
+
+/* 
+scale(N) N에 비례하여 크기 변화.
+scale(x,y)
+*/
+
+/* 
+rotate(Ndeg)
+
+*/
