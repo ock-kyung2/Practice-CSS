@@ -1,0 +1,28 @@
+[자식, 자손, 형제 선택자 (Child, Descendant & Sibling Combinators)]
+
+<section>
+  <h1>Heading</h1> -----section의 자식
+  <ul>
+    <li> ---ul의 자식
+      <h2></h2> ----li의 자식/ul의 자손
+      <ul></ul> ----h2의 형제
+    </li>
+    <li></li>
+    <li></li>
+  </ul>
+</section>
+
+[자식 선택자]
+parent > child
+
+[자손 선택자]
+parent descendants
+parent에 포함되는 모든 자손요소를 택.
+
+[형제 선택자s]
+parent + sibling
+parent ~ sibling
+
+[ex]
+.active ~ li .active 다음에 따라오는 모든 li.
+.active + li .active 다음에 오는 li 하나만.
