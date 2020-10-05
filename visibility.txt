@@ -1,0 +1,8 @@
+[visibility]
+- visivle : 기본값
+- hidden : 보이지 않겠다.
+
+[display:none VS visivle:hidden]
+
+display:none 박스가 none? 존재하지 않는 걸로 취급
+visivle : hidden 안보이게 취급
