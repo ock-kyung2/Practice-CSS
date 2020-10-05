@@ -1,0 +1,10 @@
+element:hover ---마우스를 올렸을 때 상태를 표현
+element:active ---요소를 눌렀을때 상태를 표현
+
+a:hover{
+  background-color:#ffffff;
+}
+
+input:focus{
+ 포커스가 되었을 때 상태를 표현
+}
