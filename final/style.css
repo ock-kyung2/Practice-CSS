@@ -8,6 +8,52 @@ body {
 }
 
 /* Reset CSS */
+a {
+  color: inherit;
+  /* inherit 부모의 색상을 적용 */
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ol,
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+/* >= 768px(desktop) */
+@media screen and (min-width: 768px) {
+  /* Reset CSS */
+  p {
+    font-size: 22px;
+    line-height: 1.454545454545455;
+  }
+}
 
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px) {
