@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <!-- 요소 -->
+          <p>col-1</p>
+        </div>
+        <div class="col-11">
+          <p>col-11</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5"><p>col-5</p></div>
+        <div class="col-3"><p>col-3</p></div>
+        <div class="col-4"><p>col-4</p></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- container >>> row >>>> col-#  이 규칙을 반드시 지켜야한다. -->
+
+<!-- 
+  [반응형에 매우 좋다]
+  브라우저 넓이의 brake point 마다 col 수를 다르게 할 수도 있다.
+  col-12 // col-sm-6 (576px 이상) //
+  col-md-4 (768px 이상) // col-lg-3 (998px 이상)// col-xl-2(1200px 이상)
+-->
