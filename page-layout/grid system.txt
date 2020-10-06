@@ -1,0 +1,9 @@
+container
+: grid system이 적용되는 전체 범위
+
+column
+: container는 주로 동일한 넓이의 12칸으로 나눠지는데, 이를 column이라 한다.
+  요소의 width를 정할 때, column의수로 결정
+
+gutter
+: column 사이의 간격을 gutter라 한다.
