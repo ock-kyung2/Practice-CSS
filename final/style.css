@@ -61,3 +61,29 @@ p {
     max-width: 960px !important;
   }
 }
+
+/* landing */
+
+.landing {
+  width: 100%;
+  background-color: #fdded8;
+}
+.landing-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
