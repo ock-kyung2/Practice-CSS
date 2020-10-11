@@ -154,55 +154,54 @@ p {
 }
 
 /* program */
+.program .row:first-child {
+  margin-bottom: 32px;
+}
 
 .program .section-category {
   color: #009b4d;
 }
 
-.program .col-12.col-md-10 {
-  margin-bottom: 32px;
+.program .col-md-4 {
+  margin-bottom: 20px;
 }
 
-.program-image {
+.program .col-md-4:last-child {
+  margin-bottom: 0;
+}
+
+.program-card {
+  display: block;
   text-align: center;
   padding: 24px 0 32px;
-  margin: 0 auto;
   border-radius: 8px;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
-.image01 {
+.program-card:hover {
+  background-color: rgba(49, 65, 197, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 13px 18px rgba(0, 0, 0, 0.15);
+}
+
+.program-card:hover strong {
+  color: #ffffff;
+}
+
+.program-card img {
+  display: block;
   height: 195px;
-  margin-bottom: 16px;
-  background-image: url(./assets/img-fulltime-campus.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  width: auto;
+  margin: 0 auto 16px;
 }
 
-.image02 {
-  height: 195px;
-  margin-bottom: 16px;
-  background-image: url(./assets/img-fulltime-remote.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.image03 {
-  height: 195px;
-  margin-bottom: 16px;
-  background-image: url(./assets/img-parttime-flex.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.program-name {
+.program-card strong {
   font-size: 18px;
   line-height: 1.333333333333333;
   letter-spacing: -0.02em;
+  transition: color 300ms ease-in-out;
 }
 
 /* >= 768px(desktop) */
@@ -265,11 +264,22 @@ p {
   }
 
   /* program */
-  .program-image:hover {
-    background-color: rgba(49, 65, 197, 1);
-  }
+
   .program {
     text-align: center;
+  }
+
+  .program .row:first-child {
+    margin-bottom: 72px;
+  }
+
+  .program-card img {
+    margin-bottom: 24px;
+  }
+
+  .program-card strong {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
