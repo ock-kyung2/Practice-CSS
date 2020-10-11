@@ -72,6 +72,30 @@ p {
 .fill-button:hover {
   opacity: 0.5;
 }
+
+/* Section -- 유사한 구조는 분류해서 따로!! */
+.section {
+  padding: 80px 0;
+}
+
+.section-category {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.058823529411765;
+  letter-spacing: -0.03em;
+  color: #2b292d;
+  margin-bottom: 24px;
+}
+
 /* landing */
 .landing {
   background-color: #fdded8;
@@ -130,29 +154,12 @@ p {
 }
 
 /* program */
-.program {
-  padding: 80px 0;
-}
 
-.category {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
+.program .section-category {
   color: #009b4d;
-  margin-bottom: 8px;
 }
 
-.program-title {
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1.058823529411765;
-  letter-spacing: -0.03em;
-  color: #2b292d;
-  margin-bottom: 24px;
-}
-
-.program .col-12:first-child {
+.program .col-12.col-md-10 {
   margin-bottom: 32px;
 }
 
@@ -212,6 +219,24 @@ p {
     font-size: 18px;
     line-height: 1.555555555555556;
   }
+
+  /* Section */
+  .section {
+    padding-bottom: 96px;
+  }
+
+  .section-category {
+    font-size: 22px;
+    line-height: 1.090909090909091;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
   /* landing */
   .landing-content {
     height: auto;
@@ -242,6 +267,9 @@ p {
   /* program */
   .program-image:hover {
     background-color: rgba(49, 65, 197, 1);
+  }
+  .program {
+    text-align: center;
   }
 }
 
