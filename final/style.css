@@ -213,27 +213,31 @@ p {
   margin-bottom: 32px;
 }
 
-.curriculum .fill-button{
+.curriculum .row:first-child{
   margin-bottom: 48px;
 }
 
-.curriculum .col-md-6 img{ 
+.curriculum-image{ 
+  display: none;
+}
+
+.curriculum-image img{
   width: auto;
   height: 450px;
-  display: none;
 }
 
 .curriculum .curriculum-detail{
   font-size: 15px;
   line-height: 1.466666666666667;
   letter-spacing: -0.01em;
+  color: #2b292d;
 }
 
-.curriculum .curriculum-detail:first-child{
+.curriculum .row:last-child .col-12:first-child{
   margin-bottom: 40px;
 }
 
-.curriculum .curriculum-detail span{
+.curriculum .curriculum-detail strong{
   font-weight: 700;
 }
 
@@ -316,23 +320,33 @@ p {
   }
 
   /* curriculum */
+  .curriculum .row:first-child{
+    margin-bottom: 24px;
+  }
 
-  .curriculum .fill-button{
+  .curriculum .row:last-child{
     margin-bottom: 72px;
   }
   
-  .curriculum .col-md-6 img{ 
+  .curriculum-image{ 
     display: block;
-    margin-bottom: 24px;
+  
   }
   
+  .curriculum-image img{
+    display: block;
+    width: 100%;
+    max-width: 452px;
+    height: auto;
+  }
+
   .curriculum .curriculum-detail{
     font-size: 18px;
     line-height: 1.444444444444444;
     letter-spacing: -0.01em;
   }
   
-  .curriculum .curriculum-detail:first-child{
+  .curriculum .row:last-child .col-12:first-child{
     margin-bottom: 0;
   }
 }
