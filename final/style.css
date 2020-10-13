@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* Reset CSS */
@@ -17,7 +17,7 @@ a {
 input,
 textarea,
 button {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -205,40 +205,98 @@ p {
 }
 
 /* curriculum */
-.curriculum .section-category{
-  color: #0189D1;
+.curriculum .section-category {
+  color: #0189d1;
 }
 
-.curriculum .section-desc{
+.curriculum .section-desc {
   margin-bottom: 32px;
 }
 
-.curriculum .row:first-child{
+.curriculum .row:first-child {
   margin-bottom: 48px;
 }
 
-.curriculum-image{ 
+.curriculum-image {
   display: none;
 }
 
-.curriculum-image img{
+.curriculum-image img {
   width: auto;
   height: 450px;
 }
 
-.curriculum .curriculum-detail{
+.curriculum .curriculum-detail {
   font-size: 15px;
   line-height: 1.466666666666667;
   letter-spacing: -0.01em;
   color: #2b292d;
 }
 
-.curriculum .row:last-child .col-12:first-child{
+.curriculum .row:last-child .col-12:first-child {
   margin-bottom: 40px;
 }
 
-.curriculum .curriculum-detail strong{
+.curriculum .curriculum-detail strong {
   font-weight: 700;
+}
+
+/* banner */
+.banner {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f2f8fa;
+}
+
+.banner .col-12:first-child {
+  margin-bottom: 16px;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image img {
+  display: block;
+  width: auto;
+  height: 240px;
+}
+
+.banner-title {
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #2b292d;
+  margin-bottom: 16px;
+}
+
+.banner-desc {
+  margin-bottom: 24px;
+}
+
+.banner-form input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.banner-form .fill-button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.banner-form p {
+  font-size: 13px;
+  line-height: 1.538461538461538;
+}
+
+.banner-link {
+  color: #3040c4;
+  text-decoration: underline;
 }
 
 /* >= 768px(desktop) */
@@ -320,34 +378,80 @@ p {
   }
 
   /* curriculum */
-  .curriculum .row:first-child{
+  .curriculum .row:first-child {
     margin-bottom: 24px;
   }
 
-  .curriculum .row:last-child{
+  .curriculum .row:last-child {
     margin-bottom: 72px;
   }
-  
-  .curriculum-image{ 
+
+  .curriculum-image {
     display: block;
-  
   }
-  
-  .curriculum-image img{
+
+  .curriculum-image img {
     display: block;
     width: 100%;
     max-width: 452px;
     height: auto;
   }
 
-  .curriculum .curriculum-detail{
+  .curriculum .curriculum-detail {
     font-size: 18px;
     line-height: 1.444444444444444;
     letter-spacing: -0.01em;
   }
-  
-  .curriculum .row:last-child .col-12:first-child{
+
+  .curriculum .row:last-child .col-12:first-child {
     margin-bottom: 0;
+  }
+
+  /* banner */
+  .banner {
+    padding: 80px 0;
+    text-align: start;
+  }
+
+  .banner .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  .banner-image {
+    justify-content: start;
+    width: 370px;
+    height: 300px;
+  }
+
+  .banner-image img {
+    display: block;
+    width: auto;
+    height: 285px;
+  }
+
+  .banner-title {
+    font-size: 40px;
+  }
+
+  .banner-desc {
+    font-size: 22px;
+    line-height: 1.454545454545455;
+  }
+
+  .banner-form input {
+    width: 362px;
+    margin-bottom: 4px;
+    padding: 16px 16px;
+  }
+
+  .banner-form .fill-button {
+    width: 160px;
+    margin-bottom: 8px;
+  }
+
+  .banner-form p {
+    font-size: 13px;
+    line-height: 1.538461538461538;
   }
 }
 
