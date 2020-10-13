@@ -307,13 +307,15 @@ p {
 /* footer */
 .footer {
   background-color: #ffffff;
-  padding: 24px 15px;
+  padding: 24px 0;
 }
 
 .footer-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 8;
+}
+
+.footer-link:last-child {
+  margin: 0;
 }
 
 .footer-link a {
@@ -322,10 +324,6 @@ p {
   font-size: 14px;
   line-height: 1.714285714285714;
   letter-spacing: -0.01em;
-}
-
-.footer-link a:last-child {
-  margin: 0;
 }
 
 /* >= 768px(desktop) */
@@ -492,18 +490,21 @@ p {
 
   /* footer */
   .footer {
-    background-color: #ffffff;
     padding: 16px 0;
   }
 
-  .footer-link {
-    display: block;
-    margin: 0 auto;
+  .footer-links {
+    display: flex;
+    align-items: center;
   }
 
-  .footer-link a {
+  .footer-link {
     margin-bottom: 0;
     margin-right: 16px;
+  }
+
+  .footer-link:last-child {
+    margin-right: 0;
   }
 }
 
